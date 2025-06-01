@@ -1,4 +1,4 @@
-# Circuits - Fitness Tracking App
+# Circuits - Client
 
 A modern fitness tracking application built with React Native and Expo, designed to help users track their workouts, manage exercises, and monitor their fitness journey.
 
