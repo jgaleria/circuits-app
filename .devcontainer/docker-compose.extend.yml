@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  circuits-app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ~/.gitconfig:/home/developer/.gitconfig:ro
+      - ~/.ssh:/home/developer/.ssh:ro
+    environment:
+      - DOCKER_BUILDKIT=1
+      - COMPOSE_DOCKER_CLI_BUILD=1
+    command: sleep infinity 
