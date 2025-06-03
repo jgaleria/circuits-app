@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "start": "npx expo start",
+    "start": "npx expo start --host lan --port 3000",
     "android": "npx expo start --android",
     "ios": "npx expo start --ios",
     "web": "npx expo start --web",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "docker:dev": "bash scripts/dev-start.sh",
+    "docker:dev:stop": "bash scripts/dev-stop.sh",
+    "docker:build": "bash scripts/build-prod.sh",
+    "docker:prod": "bash scripts/deploy-prod.sh",
+    "docker:logs": "bash scripts/dev-logs.sh",
+    "docker:clean": "bash scripts/cleanup.sh"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.1.2",
